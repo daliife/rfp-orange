@@ -1,0 +1,16 @@
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: black;
+  border-top: 20px solid var(--everis-color);
+  .left-part{
+    font-size: 1.2rem;
+    color: var(--white);
+  }
+  .right-part{
+    img{
+      height: 100px;
+    }
+  }
+}
