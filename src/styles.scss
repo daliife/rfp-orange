@@ -1,15 +1,26 @@
 
+// COLORS
+
 :root 
 {
---white: white;
+--white-color: #ffffff;
+--black-color: #000000;
 --base-color: #c6538c;
 --primary-color: red;
 --secondary-color: yellow;
 --tertiary-color: blue;
---everis-color: green;
---orange-color: orange;
+--everis-color: #b9d305;
+--orange-color: #ff7900;
 }
 
+.everis-color{
+  color: var(--everis-color);
+}
+.orange-color{
+  color: var(--orange-color);
+}
+
+// RESETS
 
 *{
   margin: 0;

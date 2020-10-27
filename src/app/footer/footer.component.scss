@@ -2,11 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background-color: black;
-  border-top: 20px solid var(--everis-color);
+  background-color: var(--black-color);
+  border-top: 1.25rem solid var(--everis-color);
   .left-part{
     font-size: 1.2rem;
-    color: var(--white);
+    color: var(--white-color);
+    .left-text{
+      padding: 0 0 2rem 1.25rem;
+    }
   }
   .right-part{
     img{
