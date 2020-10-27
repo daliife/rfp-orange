@@ -1,0 +1,44 @@
+.collaborators-container {
+  .collaborators-title {
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.08;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ff7900;
+    padding: 4.5rem 0rem;
+  }
+  #collaborators {
+    .title {
+      padding-top: 2rem;
+      font-size: 26px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ff7900;
+    }
+    .subtitle {
+      font-size: 18px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      text-align: center;
+      color: #000000;
+    }
+  }
+  #action-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0rem;
+    a {
+      margin: 0 1.5rem;
+    }
+  }
+}

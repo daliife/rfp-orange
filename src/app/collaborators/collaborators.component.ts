@@ -13,17 +13,17 @@ export class CollaboratorsComponent implements OnInit {
     {
       title: 'Aurora',
       subtitle: 'Directora Sector',
-      imgPath: 'aaaa/aaaa'
+      imgPath: 'https://via.placeholder.com/160'
     },
     {
       title: 'Aurora',
       subtitle: 'Directora Sector',
-      imgPath: 'aaaa/aaaa'
+      imgPath: 'https://via.placeholder.com/160'
     },
     {
       title: 'Aurora',
       subtitle: 'Directora Sector',
-      imgPath: 'aaaa/aaaa'
+      imgPath: 'https://via.placeholder.com/160'
     }
   ];
 
