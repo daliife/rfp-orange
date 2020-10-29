@@ -8,7 +8,7 @@
         *ngFor="let collaborator of collaborators"
         class="col-sm center-align"
       >
-        <img src="{{ collaborator.imgPath }}" />
+        <img class="collaborator-img" src="{{ collaborator.imgPath }}" />
         <h1 class="title">{{ collaborator.title }}</h1>
         <h2 class="subtitle">
           {{ collaborator.subtitle }}
@@ -17,7 +17,12 @@
     </div>
   </div>
   <div id="action-buttons">
-    <a href="https://google.com" target="_blank" class="white-btn">Descargar propuesta</a>
-    <a href="https://google.com" target="_blank" class="orange-btn">Contacta con nosotros</a>
+    <a href="https://google.com" target="_blank" class="white-btn"
+      >Descargar propuesta 
+      <span class="arrow-icon"></span>
+    </a>
+    <a href="https://google.com" target="_blank" class="orange-btn"
+      >Contacta con nosotros</a
+    >
   </div>
 </div>

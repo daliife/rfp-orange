@@ -1,0 +1,65 @@
+.profiles-container {
+  padding: 20px 222px;
+  position: relative;
+  padding-top: 297px;
+  .title {
+    font-family: Mont;
+    font-size: 70px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ff7900;
+  }
+  .description {
+    font-family: Mont;
+    font-size: 26px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+  }
+  .profile-types {
+    padding-top: 64px;
+    padding-bottom: 72px;
+    .profile-card{
+        width: 280px;
+        height: 394px;
+        border-radius: 8px;
+        border: solid 1px #e3e4ea;
+        background-color: #ffffff;
+    }
+    img {
+      width: 124px;
+      height: 124px;
+      object-fit: contain;
+      margin-bottom: 22px;
+      margin-top: 48px;
+    }
+    .title {
+      padding-bottom: 67px;
+      font-family: Mont;
+      font-size: 26px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.15;
+      letter-spacing: normal;
+      text-align: center;
+    }
+  }
+  .floating-left {
+    width: 705px;
+    height: 473px;
+    object-fit: contain;
+    position: absolute;
+    left: -5%;
+    top: -20%;
+    z-index: 1;
+  }
+}

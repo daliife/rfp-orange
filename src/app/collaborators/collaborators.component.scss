@@ -11,6 +11,11 @@
     padding: 4.5rem 0rem;
   }
   #collaborators {
+    .collaborator-img{
+      width: 160px;
+      height: 160px;
+      object-fit: contain;
+    }
     .title {
       padding-top: 2rem;
       font-size: 26px;
@@ -41,4 +46,14 @@
       margin: 0 1.5rem;
     }
   }
+}
+
+.arrow-icon {
+  background: url('/assets/logos/ico-download.svg');
+  display: block;
+  width: 14px;
+  height: 15px;
+  object-fit: contain;
+  color: #000000;
+  float: right;
 }

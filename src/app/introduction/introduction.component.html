@@ -1,0 +1,18 @@
+<div class="introduction-container">
+  <h1 class="title center-align">Cómo funciona</h1>
+  <div class="introduction-options container-fluid">
+    <div class="row">
+      <div *ngFor="let option of options" class="option-card col-sm">
+        <div class="">
+          <h1 class="title">
+            {{ option.title }}
+          </h1>
+          <h3 class="description">
+            {{ option.description }}
+          </h3>
+          <a class="white-btn">Descubre más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

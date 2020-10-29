@@ -8,6 +8,10 @@ import { ProductOverviewComponent } from './product-overview/product-overview.co
 import { CardQuizzComponent } from './card-quizz/card-quizz.component';
 import { HoverCardsComponent } from './hover-cards/hover-cards.component';
 import { QuestionsComponent } from './questions/questions.component';
+import { ProfilesComponent } from './profiles/profiles.component';
+import { ServicesComponent } from './services/services.component';
+import { IntroductionComponent } from './introduction/introduction.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +22,10 @@ import { QuestionsComponent } from './questions/questions.component';
     CardQuizzComponent,
     HoverCardsComponent,
     QuestionsComponent,
+    ProfilesComponent,
+    ServicesComponent,
+    IntroductionComponent,
+    HomeComponent,
   ],
   imports: [BrowserModule],
   providers: [],

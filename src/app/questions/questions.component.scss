@@ -1,6 +1,7 @@
 .questions-container {
   padding: 20px 222px;
   height: 600px;
+  position: relative;
   .title {
     font-family: Mont;
     font-size: 70px;
@@ -21,14 +22,16 @@
     letter-spacing: normal;
     color: #000000;
   }
-  .floating-left{
+  .floating-left {
     position: absolute;
-    left: 0;
+    left: -10%;
     top: 0;
+    z-index: -5;
   }
-  .floating-right{
+  .floating-right {
     position: absolute;
     right: 0;
     top: 0;
+    z-index: -5;
   }
 }

@@ -4,22 +4,41 @@
   justify-content: space-between;
   align-items: flex-end;
   background-color: var(--black-color);
-  border-top: 1.25rem solid var(--everis-color);
+  // border-top: 1.25rem solid var(--everis-color);
+  box-shadow: 0 0 0 1.25rem var(--everis-color);
   .left-part {
     font-size: 1.2rem;
     color: var(--white-color);
+    padding: 0 0 2.125rem 1.25rem;
     .left-text {
-      padding: 0 0 2rem 1.25rem;
+      font-size: 16px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
     }
   }
   .right-part {
+    padding-bottom: 1.25rem;
+    padding-right: 2.125rem;
     img {
       height: 100px;
+    }
+    #separator {
+      width: 2px;
+      height: 54px;
+      background-color: #707372;
+      margin-left: 14px;
+      margin-right: 20px;
+      float: left;
     }
     #everis-logo {
       width: 123px;
       height: 60px;
       object-fit: contain;
+      float: left;
     }
     #orange-logo {
       width: 50px;

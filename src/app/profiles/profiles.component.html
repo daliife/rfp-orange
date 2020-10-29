@@ -1,0 +1,22 @@
+<div class="profiles-container center-align">
+  <h1 class="title">Perfiles</h1>
+  <p class="description">
+    Aprende todos las técnicas necesario para llevar a cabo…. bli bli bliIn hac
+    habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat
+    aliquam. Integer et elit eget elit facilisis tristique.
+  </p>
+  <div class="profile-types container">
+    <div class="row">
+      <div *ngFor="let profile of profiles" class="col-sm center-align">
+        <div class="profile-card">
+          <img src="{{ profile.imgPath }}" />
+          <h1 class="title" [ngStyle]="{ color: profile.color }">
+            {{ profile.title }}
+          </h1>
+          <a class="white-btn">Hover</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img class="floating-left" src="assets/img/floating/ping-pong.png" />
+</div>

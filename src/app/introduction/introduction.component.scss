@@ -1,0 +1,51 @@
+.introduction-container {
+  padding: 20px 222px;
+  height: 600px;
+  .title {
+    font-family: Mont;
+    font-size: 70px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ff7900;
+  }
+  .description {
+    font-family: Mont;
+    font-size: 26px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    color: #000000;
+  }
+  .option-card {
+    border: solid 3px #000000;
+    padding: 20px;
+    margin: 20px;
+    .title {
+      font-family: Mont;
+      font-size: 30px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ff7900;
+    }
+    .description {
+      width: 325px;
+      height: 138px;
+      font-family: Mont;
+      font-size: 20px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.4;
+      letter-spacing: normal;
+      color: #000000;
+    }
+  }
+}

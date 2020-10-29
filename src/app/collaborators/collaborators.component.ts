@@ -11,19 +11,24 @@ export class CollaboratorsComponent implements OnInit {
 
   private collaboratorsMock = [
     {
-      title: 'Aurora',
-      subtitle: 'Directora Sector',
-      imgPath: 'https://via.placeholder.com/160'
+      title: 'Aurora San Municio',
+      subtitle: 'Directora Sector Telecom',
+      imgPath: 'assets/img/collaborators/img-aurora@2x.png'
     },
     {
-      title: 'Aurora',
-      subtitle: 'Directora Sector',
-      imgPath: 'https://via.placeholder.com/160'
+      title: 'Fernando Gil Sole',
+      subtitle: 'Digital Experience Manager',
+      imgPath: 'assets/img/collaborators/img-fernando@2x.png'
     },
     {
-      title: 'Aurora',
-      subtitle: 'Directora Sector',
-      imgPath: 'https://via.placeholder.com/160'
+      title: 'Isabel Blas Moreno',
+      subtitle: 'Experience Design Manager',
+      imgPath: 'assets/img/collaborators/img-isabel@2x.png'
+    },
+    {
+      title: 'Elena Marín-Dorado',
+      subtitle: 'Experience Design Project Leader',
+      imgPath: 'assets/img/collaborators/img-elena@2x.png'
     }
   ];
 
