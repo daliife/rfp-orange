@@ -1,0 +1,23 @@
+.home-container{
+  height:1000px;
+  background-color: var(--black-color);
+  .title{
+    color: white;
+  }
+  .floating-elements{
+    position: relative;
+    height: 100%;
+    .floating-left {
+      position: absolute;
+      left: 0;
+      bottom: -5%;
+      z-index: 0;
+    }
+    .floating-right {
+      position: absolute;
+      right: -25%;
+      bottom: 0;
+      z-index: 0;
+    }
+  }
+}

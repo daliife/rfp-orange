@@ -11,23 +11,27 @@ export class IntroductionComponent implements OnInit {
     {
       title: '1. Servicios',
       description: 'fhdskfhdsjfhkldshf kjlfhkjdsl fhkjlshf lkjhflkdlksdjfklfljdsk',
-      anchor: '#test'
+      anchor: '#services'
     },
     {
       title: '2. Perfiles',
       description: 'fhdskfhdsjfhkldshf kjlfhkjdsl fhkjlshf lkjhflkdlksdjfklfljdsk',
-      anchor: '#test'
+      anchor: '#profiles'
     },
     {
       title: '3. Preguntas',
       description: 'fhdskfhdsjfhkldshf kjlfhkjdsl fhkjlshf lkjhflkdlksdjfklfljdsk',
-      anchor: '#test'
+      anchor: '#questions'
     },
   ];
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  scrollToElement($element): void {
+    console.log($element);
+    $element.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
   }
 
 }

@@ -25,6 +25,20 @@
   padding: 0;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+  color: var(--black-color);
+}
+img{
+  user-drag: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+html, body { 
+  max-width: 100%; 
+  overflow-x: hidden;
+  scroll-behavior: smooth; 
 }
 
 // GLOBAL CLASSES
@@ -45,6 +59,13 @@
   letter-spacing: -0.1px;
   text-align: center;
   color: #ffffff;
+  transition: all 250ms;
+  &:hover{
+    color: #ffffff;
+    background-color: #ffbb3c;
+    text-decoration: none;
+    
+  }
 }
 .white-btn {
   border: solid 2px #000000;
@@ -60,4 +81,10 @@
   letter-spacing: -0.1px;
   text-align: center;
   color: #000000;
+  transition: all 250ms;
+  &:hover{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+  }
 }
