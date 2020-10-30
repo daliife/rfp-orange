@@ -1,6 +1,32 @@
 <div class="introduction-container">
-  <h1 class="title center-align">Cómo funciona</h1>
-  <div class="introduction-options container-fluid">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="scroll-container col-12 center-align">
+        <img class="scroll-logo" src="assets\img\scroll-icon.svg">
+        <p class="scroll-text">Haz scroll</p>
+      </div>
+      <div class="col-12">
+        <h1 class="description center-align" style="margin-top: 220px">
+          No hay mejor forma de entender al cliente que diseñar siempre pensando
+          en él. Diseñando poniendo en el centro al usuario.
+        </h1>
+      </div>
+      <div class="col-12">
+        <h1 class="description center-align" style="margin-top: 36px">
+          Pero, ¿tienes claro qué técnica aplicar en cada momento?, ¿qué perfil
+          es el idóneo en cada servicio? o ¿cuánto tiempo es el adecuado para
+          dinámica?
+        </h1>
+      </div>
+      <div class="col-12">
+        <h1 class="description center-align" style="margin-top: 36px">
+          ¡Te retamos con un juego!
+        </h1>
+      </div>
+      <div class="col-12">
+        <h1 class="introduction-title center-align">Cómo funciona</h1>
+      </div>
+    </div>
     <div class="row">
       <div *ngFor="let option of options" class="option-card col-sm">
         <div class="">
@@ -10,9 +36,18 @@
           <h3 class="description">
             {{ option.description }}
           </h3>
-          <a class="white-btn" href="{{option.anchor}}">Descubre más</a>
+          <a class="white-btn" href="{{ option.anchor }}">Descubre más</a>
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-12 center-align">
+        <img class="render-box" src="assets/img/introduction/img-box.svg" />
+      </div>
+    </div>
+  </div>
+  <div class="floating-elements">
+    <img class="floating-left" src="assets/img/floating/img-sticker.png" />
+    <img class="floating-right" src="assets/img/floating/img-skittles.png" />
   </div>
 </div>

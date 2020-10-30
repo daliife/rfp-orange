@@ -3,7 +3,7 @@
   height: 600px;
   position: relative;
   .title {
-    font-family: Mont;
+    font-family: 'Mont-Bold';
     font-size: 70px;
     font-weight: bold;
     font-stretch: normal;
@@ -11,16 +11,21 @@
     line-height: normal;
     letter-spacing: normal;
     color: #ff7900;
+    margin-top: 203px;
   }
   .description {
-    font-family: Mont;
+    width: 997px;
     font-size: 26px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.31;
     letter-spacing: normal;
+    text-align: center;
     color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
   }
   .floating-left {
     position: absolute;

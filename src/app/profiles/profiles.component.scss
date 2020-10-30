@@ -3,7 +3,7 @@
   position: relative;
   padding-top: 297px;
   .title {
-    font-family: Mont;
+    font-family: 'Mont-Bold';
     font-size: 70px;
     font-weight: bold;
     font-stretch: normal;
@@ -14,7 +14,11 @@
     color: #ff7900;
   }
   .description {
-    font-family: Mont;
+    margin-top: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 997px;
+    height: 102px;
     font-size: 26px;
     font-weight: 600;
     font-stretch: normal;
@@ -27,12 +31,12 @@
   .profile-types {
     padding-top: 64px;
     padding-bottom: 72px;
-    .profile-card{
-        width: 280px;
-        height: 394px;
-        border-radius: 8px;
-        border: solid 1px #e3e4ea;
-        background-color: #ffffff;
+    .profile-card {
+      width: 280px;
+      height: 394px;
+      border-radius: 8px;
+      border: solid 1px #e3e4ea;
+      background-color: #ffffff;
     }
     img {
       width: 124px;
@@ -42,8 +46,8 @@
       margin-top: 48px;
     }
     .title {
+      font-family: 'Mont-Bold';
       padding-bottom: 67px;
-      font-family: Mont;
       font-size: 26px;
       font-weight: bold;
       font-stretch: normal;

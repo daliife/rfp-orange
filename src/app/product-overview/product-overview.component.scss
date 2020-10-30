@@ -1,7 +1,8 @@
 .product-container {
   background-color: var(--black-color);
   .title {
-    font-family: Mont;
+    width: 788px;
+    font-family: 'Mont-Bold';
     font-size: 48px;
     font-weight: bold;
     font-stretch: normal;
@@ -10,11 +11,13 @@
     letter-spacing: normal;
     text-align: center;
     color: #ff7900;
-    padding-top: 80px;
-    padding-bottom: 60px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .render{
-      padding-top: 100px;
-      padding-bottom: 160px;
+      margin-top: 100px;
+      margin-bottom: 160px;
   }
 }

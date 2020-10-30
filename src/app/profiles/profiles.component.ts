@@ -10,20 +10,20 @@ export class ProfilesComponent implements OnInit {
     {
       title: 'User Research',
       description: 'blablabla',
-      imgPath: 'assets/img/img-user-research@2x.png',
-      color: '#085ebd',
-    },
-    {
-      title: 'User Research',
-      description: 'blablabla',
-      imgPath: 'assets/img/img-ux-interaction-design@2x.png',
+      imgPath: 'assets/img/profiles/img-user-research@2x.png',
       color: '#ff8ad4',
     },
     {
       title: 'User Research',
       description: 'blablabla',
-      imgPath: 'assets/img/img-experience-design@2x.png',
-      color: '#ffb400',
+      imgPath: 'assets/img/profiles/img-ux-interaction@2x.png',
+      color: '#50be87',
+    },
+    {
+      title: 'User Research',
+      description: 'blablabla',
+      imgPath: 'assets/img/profiles/img-experience-design@2x.png',
+      color: '#4bb4e6',
     },
   ];
 

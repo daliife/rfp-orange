@@ -1,22 +1,33 @@
-.home-container{
-  height:1000px;
+.home-container {
+  height: 643px;
   background-color: var(--black-color);
-  .title{
-    color: white;
+  position: relative;
+  .cards-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 94px 0 29px 0;
   }
-  .floating-elements{
-    position: relative;
+  .main-title {
+    width: 605px;
+    height: 98px;
+    object-fit: contain;
+  }
+  .description {
+    margin-top: 125px;
+  }
+  .floating-elements {
     height: 100%;
     .floating-left {
       position: absolute;
       left: 0;
-      bottom: -5%;
+      top: 0;
       z-index: 0;
     }
     .floating-right {
       position: absolute;
       right: -25%;
-      bottom: 0;
+      bottom: -40%;
       z-index: 0;
     }
   }

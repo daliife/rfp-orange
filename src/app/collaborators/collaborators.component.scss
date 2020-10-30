@@ -1,6 +1,7 @@
 .collaborators-container {
   .collaborators-title {
     font-size: 48px;
+    font-family: 'Mont-Bold';
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -11,14 +12,15 @@
     padding: 4.5rem 0rem;
   }
   #collaborators {
-    .collaborator-img{
+    .collaborator-img {
       width: 160px;
       height: 160px;
       object-fit: contain;
     }
     .title {
       padding-top: 2rem;
-      font-size: 26px;
+      font-family: 'Mont-Bold';
+      font-size: 22px;
       font-weight: bold;
       font-stretch: normal;
       font-style: normal;
@@ -28,11 +30,11 @@
       color: #ff7900;
     }
     .subtitle {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 600;
       font-stretch: normal;
       font-style: normal;
-      line-height: 1.56;
+      line-height: 1.75;
       letter-spacing: normal;
       text-align: center;
       color: #000000;
@@ -47,9 +49,8 @@
     }
   }
 }
-
 .arrow-icon {
-  background: url('../../assets/logos/ico-download.svg');
+  background: url("../../assets/logos/ico-download.svg");
   display: block;
   width: 14px;
   height: 15px;

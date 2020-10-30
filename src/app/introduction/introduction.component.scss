@@ -1,8 +1,26 @@
 .introduction-container {
-  padding: 20px 222px;
-  height: 600px;
-  .title {
-    font-family: Mont;
+  padding: 20px 222px 0px 222px;
+  position: relative;
+  .scroll-container {
+    animation: float 2s ease-in-out infinite;
+    .scroll-logo {
+      margin-top: 40px;
+    }
+    .scroll-text {
+      margin-top: 10px;
+      font-size: 18px;
+      font-family: "Mont-Bold";
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ff7900;
+    }
+  }
+  .introduction-title {
+    font-family: "Mont-Bold";
     font-size: 70px;
     font-weight: bold;
     font-stretch: normal;
@@ -10,23 +28,29 @@
     line-height: normal;
     letter-spacing: normal;
     color: #ff7900;
+    padding-top: 279px;
+    padding-bottom: 60px;
   }
   .description {
-    font-family: Mont;
+    margin-left: auto;
+    margin-right: auto;
+    width: 795px;
     font-size: 26px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.31;
     letter-spacing: normal;
+    text-align: center;
+    text-align: center;
     color: #000000;
   }
   .option-card {
     border: solid 3px #000000;
-    padding: 20px;
+    padding: 40px 32px;
     margin: 20px;
     .title {
-      font-family: Mont;
+      font-family: "Mont-Bold";
       font-size: 30px;
       font-weight: bold;
       font-stretch: normal;
@@ -36,9 +60,8 @@
       color: #ff7900;
     }
     .description {
+      margin: 0px;
       width: 325px;
-      height: 138px;
-      font-family: Mont;
       font-size: 20px;
       font-weight: 600;
       font-stretch: normal;
@@ -46,6 +69,41 @@
       line-height: 1.4;
       letter-spacing: normal;
       color: #000000;
+      margin-bottom: 45px;
+      text-align: left;
     }
+  }
+  .render-box {
+    margin-top: 94px;
+    width: 997px;
+    height: 248px;
+    object-fit: contain;
+  }
+  .floating-elements {
+    height: 100%;
+    .floating-left {
+      position: absolute;
+      left: 0;
+      top: 20%;
+      z-index: 0;
+    }
+    .floating-right {
+      position: absolute;
+      right: 0%;
+      bottom: 45%;
+      z-index: 0;
+    }
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
   }
 }

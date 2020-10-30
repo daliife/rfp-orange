@@ -1,8 +1,8 @@
 .card-quizz-container {
-  height: 900px;
   background-color: var(--white-color);
   .title {
-    padding-top: 100px;
+    font-family: 'Mont-Bold';
+    padding-bottom: 68px;
     font-size: 50px;
     font-weight: bold;
     font-stretch: normal;
@@ -14,6 +14,7 @@
   .card-theme {
     padding: 0;
     margin: 10px;
+    margin-bottom: 105px;
     width: 458px;
     height: 675px;
     position: relative;
