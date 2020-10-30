@@ -64,14 +64,13 @@ body {
 }
 
 //NO SCROLLBAR
-
-// html {
-//   overflow-y:   scroll;
-// }
-// ::-webkit-scrollbar {
-//     width: 0px;
-//     background: transparent; /* make scrollbar transparent */
-// }
+html {
+  overflow-y:   scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
 
 // GLOBAL CLASSES
 

@@ -2,7 +2,7 @@
   background-color: var(--black-color);
   .title {
     width: 788px;
-    font-family: 'Mont-Bold';
+    font-family: "Mont-Bold";
     font-size: 48px;
     font-weight: bold;
     font-stretch: normal;
@@ -16,8 +16,11 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .render{
-      margin-top: 100px;
-      margin-bottom: 160px;
+  .render {
+    width: 100%;
+    height: 936px;
+    object-fit: contain;
+    margin-top: 100px;
+    margin-bottom: 160px;
   }
 }
