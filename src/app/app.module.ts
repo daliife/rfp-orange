@@ -12,6 +12,8 @@ import { ProfilesComponent } from './profiles/profiles.component';
 import { ServicesComponent } from './services/services.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { HomeComponent } from './home/home.component';
+import { ServicesCarouselComponent } from './services/services-carousel/services-carousel.component';
+
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { HomeComponent } from './home/home.component';
     ServicesComponent,
     IntroductionComponent,
     HomeComponent,
+    ServicesCarouselComponent,
   ],
   imports: [BrowserModule],
   providers: [],
