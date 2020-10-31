@@ -1,84 +1,83 @@
 <div class="col-12">
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div *ngFor="let servicePart of services" data-interval=false class="carousel-item">
         <div class="container-fluid">
           <div class="row">
-            <div *ngFor="let service of services.slice(0,5)" class="carousel-card col-sm"
-            (click)="onClick(service);">
+            <div *ngFor="let service of servicePart.slice(0,5)" class="carousel-card col-sm"
+              (click)="onClick(service);">
               <img class="carousel-logo" src="{{service.iconPath}}">
-              <h3 class="carousel-title orange-color">{{service.title}}-{{service.id}}</h3>
+              <h3 class="carousel-title orange-color">{{service.title}} {{service.id}}</h3>
             </div>
             <div class="w-100"></div>
-            <div *ngFor="let service of services.slice(5,10)" class="carousel-card col-sm"
-            (click)="onClick(service);">
+            <div *ngFor="let service of servicePart.slice(5,10)" class="carousel-card col-sm"
+              (click)="onClick(service);">
               <img class="carousel-logo" src="{{service.iconPath}}">
-              <h3 class="carousel-title orange-color">{{service.title}}-{{service.id}}</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="container-fluid">
-          <div class="row">
-            <div *ngFor="let service of services.slice(0,5)" class="carousel-card col-sm"
-            (click)="onClick(service);">
-              <img class="carousel-logo" src="{{service.iconPath}}">
-              <h3 class="carousel-title orange-color">{{service.title}}-{{service.id}}</h3>
-            </div>
-            <div class="w-100"></div>
-            <div *ngFor="let service of services.slice(5,10)" class="carousel-card col-sm"
-            (click)="onClick(service);">
-              <img class="carousel-logo" src="{{service.iconPath}}">
-              <h3 class="carousel-title orange-color">{{service.title}}-{{service.id}}</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="container-fluid">
-          <div class="row">
-            <div *ngFor="let service of services.slice(0,5)" class="carousel-card col-sm"
-            (click)="onClick(service);">
-              <img class="carousel-logo" src="{{service.iconPath}}">
-              <h3 class="carousel-title orange-color">{{service.title}}-{{service.id}}</h3>
-            </div>
-            <div class="w-100"></div>
-            <div *ngFor="let service of services.slice(5,10)" class="carousel-card col-sm"
-            (click)="onClick(service);">
-              <img class="carousel-logo" src="{{service.iconPath}}">
-              <h3 class="carousel-title orange-color">{{service.title}}-{{service.id}}</h3>
+              <h3 class="carousel-title orange-color">{{service.title}} {{service.id}}</h3>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
 </div>
 
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+<div class="container">
+  <div class="row justify-content-end">
+    <div class="col-1">
+      <a href="#carouselExampleControls" role="button" data-slide="prev">
+        <div class="slider-button">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </div>
+      </a>
+    </div>
+    <div class="col-1">
+      <a href="#carouselExampleControls" role="button" data-slide="next">
+        <div class="slider-button">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <img src="{{serviceActive.iconPath}}">
+        <h3 class="modal-title orange-color" id="exampleModalLongTitle">{{serviceActive.title}}{{serviceActive.id}}</h3>
+        <h5 class="white-color" id="exampleModalLongTitle">{{serviceActive.description}}</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        {{ serviceActive | json}}
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="orange-color">¿Para qué?</h3>
+              <p>{{serviceActive.reason}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <h3 class="orange-color">Fases / Actividades</h3>
+              <ol>
+                <li *ngFor="let phase of serviceActive.phases">phase-{{phase}}</li>
+              </ol>
+            </div>
+            <div class="col-6">
+              <h3 class="orange-color">Participantes</h3>
+              <p *ngFor="let participant of serviceActive.participants">participant-{{participant}}</p>
+              <h3 class="orange-color">Profiles</h3>
+              <p *ngFor="let profile of serviceActive.profiles">profile-{{profile}}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

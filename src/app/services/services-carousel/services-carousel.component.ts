@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { servicesMock } from './services-carousel.mock';
 declare var $: any;
 
 @Component({
@@ -6,135 +7,31 @@ declare var $: any;
   templateUrl: './services-carousel.component.html',
   styleUrls: ['./services-carousel.component.scss']
 })
-export class ServicesCarouselComponent implements OnInit {
+export class ServicesCarouselComponent implements OnInit, AfterViewInit {
 
   constructor() { }
 
-  modalShown = false;
+  services: any;
 
-  serviceActive: any =  {
-    id: 1,
-    title: 'Mapa de empatía',
-    iconPath: 'assets/renders/1.PNG',
-    description: 'description value',
-    reason: 'reason value',
-    phases: [ '1', '2', '3', '4'],
-    participants: ['1', '2', '3'],
-    profiles: ['1', '2', '3']
-  };
+  serviceActive: any = servicesMock[0];
 
-  services: any[] = [
-    {
-      id: 1,
-      title: 'Mapa de empatía',
-      iconPath: 'assets/renders/1.PNG',
-      description: 'description value',
-      reason: 'reason value',
-      phases: [ '1', '2', '3', '4'],
-      participants: ['1', '2', '3'],
-      profiles: ['1', '2', '3']
-    },
-    {
-      id: 2,
-      title: 'Mapa de empatía',
-      iconPath: 'assets/renders/1.PNG',
-      description: 'description value',
-      reason: 'reason value',
-      phases: [ '1', '2', '3', '4'],
-      participants: ['1', '2', '3'],
-      profiles: ['1', '2', '3']
-    },
-    {
-      id: 3,
-      title: 'Mapa de empatía',
-      iconPath: 'assets/renders/1.PNG',
-      description: 'description value',
-      reason: 'reason value',
-      phases: [ '1', '2', '3', '4'],
-      participants: ['1', '2', '3'],
-      profiles: ['1', '2', '3']
-    },
-    {
-      id: 4,
-      title: 'Mapa de empatía',
-      iconPath: 'assets/renders/1.PNG',
-      description: 'description value',
-      reason: 'reason value',
-      phases: [ '1', '2', '3', '4'],
-      participants: ['1', '2', '3'],
-      profiles: ['1', '2', '3']
-    },
-    {
-      id: 5,
-      title: 'Mapa de empatía',
-      iconPath: 'assets/renders/1.PNG',
-      description: 'description value',
-      reason: 'reason value',
-      phases: [ '1', '2', '3', '4'],
-      participants: ['1', '2', '3'],
-      profiles: ['1', '2', '3']
-    },
-    {
-      id: 6,
-      title: 'Mapa de empatía',
-      iconPath: 'assets/renders/1.PNG',
-      description: 'description value',
-      reason: 'reason value',
-      phases: [ '1', '2', '3', '4'],
-      participants: ['1', '2', '3'],
-      profiles: ['1', '2', '3']
-    },
-    {
-      id: 7,
-      title: 'Mapa de empatía',
-      iconPath: 'assets/renders/1.PNG',
-      description: 'description value',
-      reason: 'reason value',
-      phases: [ '1', '2', '3', '4'],
-      participants: ['1', '2', '3'],
-      profiles: ['1', '2', '3']
-    },
-    {
-      id: 8,
-      title: 'Mapa de empatía',
-      iconPath: 'assets/renders/1.PNG',
-      description: 'description value',
-      reason: 'reason value',
-      phases: [ '1', '2', '3', '4'],
-      participants: ['1', '2', '3'],
-      profiles: ['1', '2', '3']
-    },
-    {
-      id: 9,
-      title: 'Mapa de empatía',
-      iconPath: 'assets/renders/1.PNG',
-      description: 'description value',
-      reason: 'reason value',
-      phases: [ '1', '2', '3', '4'],
-      participants: ['1', '2', '3'],
-      profiles: ['1', '2', '3']
-    },
-    {
-      id: 10,
-      title: 'Mapa de empatía',
-      iconPath: 'assets/renders/1.PNG',
-      description: 'description value',
-      reason: 'reason value',
-      phases: [ '1', '2', '3', '4'],
-      participants: ['1', '2', '3'],
-      profiles: ['1', '2', '3']
-    },
-  ];
-
-  ngOnInit(): void { }
-
-  onClick(newService: number): void{
-    $('#exampleModalCenter').modal('toggle');
-    this.serviceActive = newService;
+  ngOnInit(): void {
+    const numDivisions = 10;
+    this.services = new Array(Math.ceil(servicesMock.length / numDivisions))
+      .fill(1)
+      .map(_ => servicesMock.splice(0, numDivisions));
   }
 
-  toggleModal(): void{
-    this.modalShown = !this.modalShown;
+  ngAfterViewInit(): void {
+    $('.carousel').carousel({
+      interval: false
+    });
+    $('.carousel-item').first().addClass('active');
+  }
+
+  onClick(newService: number): void {
+    $('#exampleModalCenter').modal('toggle');
+    this.serviceActive = newService;
   }
 
 }
