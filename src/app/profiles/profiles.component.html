@@ -27,19 +27,41 @@
     <div *ngFor="let profile of profiles" class="col-4">
       <div class="card">
         <div class="cardTop">
-          
+
         </div>
         <div class="cardBottom">
           <div class="cardText">
-            <h3 class="cardTitle">Title</h3>
-            <h4 class="cardInfo">Short Description</h4>
+            <!-- <a class="white-btn center-align">Hover</a> -->
             <div class="cardHoverText">
-              Lorem Ipsum
-              <ul>
-                <li>What is Lorem Ipsum?</li>
-                <li>rambled it to make a type specimen book. It has survived</li>
-                <li>centuries, but also the leap into electronic typesettingessent</li>
-              </ul>
+              <h1 class="title">title 1</h1>
+              <div class="icon-values">
+                <img *ngFor="let dummy of ' '.repeat(profile.stats.experience).split('')" class="icon"
+                  src="assets/img/profiles/img-ux-interaction@2x.png">
+                <img *ngFor="let dummy of ' '.repeat(5 - profile.stats.experience).split('')" class="icon icon-faded"
+                  src="assets/img/profiles/img-ux-interaction@2x.png">
+              </div>
+              <h1 class="title">title 2</h1>
+              <div class="icon-values">
+                <img *ngFor="let dummy of ' '.repeat(profile.stats.empathy).split('')" class="icon"
+                  src="assets/img/profiles/img-ux-interaction@2x.png">
+                <img *ngFor="let dummy of ' '.repeat(5 - profile.stats.empathy).split('')" class="icon icon-faded"
+                  src="assets/img/profiles/img-ux-interaction@2x.png">
+              </div>
+              <h1 class="title">title 3</h1>
+              <div class="icon-values">
+                <img *ngFor="let dummy of ' '.repeat(profile.stats.analitical).split('')" class="icon"
+                  src="assets/img/profiles/img-ux-interaction@2x.png">
+                <img *ngFor="let dummy of ' '.repeat(5 - profile.stats.analitical).split('')" class="icon icon-faded"
+                  src="assets/img/profiles/img-ux-interaction@2x.png">
+              </div>
+              <h1 class="title">title 4</h1>
+              <div class="icon-values">
+                <img *ngFor="let dummy of ' '.repeat(profile.stats.objectivity).split('')" class="icon"
+                  src="assets/img/profiles/img-ux-interaction@2x.png">
+                <img *ngFor="let dummy of ' '.repeat(5 - profile.stats.objectivity).split('')" class="icon icon-faded"
+                  src="assets/img/profiles/img-ux-interaction@2x.png">
+              </div>
+              <a href="#" class="white-btn">Download CV</a>
             </div>
           </div>
         </div>
