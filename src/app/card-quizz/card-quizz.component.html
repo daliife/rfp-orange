@@ -1,11 +1,37 @@
 <div class="card-quizz-container">
-  <h1 class="title center-align orange-color">¡Vamos a jugar!</h1>
-  <div class="card-theme center-align">
-    <div class="front-theme face-theme">
-      <h2>front</h2>
-    </div>
-    <div class="back-theme face-theme">
-      <h2>back</h2>
+  <h1 class="title center-align orange-color">¡Vamos a jugar! - {{isFront}} - {{cardId}}</h1>
+  <div class="card-container container-fluid">
+    <div
+      class="row"
+      style="display: flex; justify-content: space-evenly; align-items: center"
+    >
+      <div class="button-container">
+        <button class="white-btn" (click)="previousCard()">PREVIOUS</button>
+      </div>
+      <div class="card-wrapper">
+        <div class="card-theme center-align">
+          <div class="front-theme face-theme">
+            <h2>{{ questionsList[cardId].question }}</h2>
+            <div class="answers-container">
+              <p *ngFor="let answer of questionsList[cardId].answers">
+                {{ answer }}
+              </p>
+            </div>
+          </div>
+          <div class="back-theme face-theme">
+            <h2>Solución</h2>
+            <p>{{ questionsList[cardId].solution }}</p>
+            <h2>¿Por qué?</h2>
+            <p>{{ questionsList[cardId].reason }}</p>
+            <h2>Consejo</h2>
+            <p>{{ questionsList[cardId].advice }}</p>
+            <p>{{ questionsList[cardId].adviceLabel }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="white-btn" (click)="nextCard()">NEXT</button>
+      </div>
     </div>
   </div>
 </div>

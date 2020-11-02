@@ -1,7 +1,7 @@
 .card-quizz-container {
   background-color: var(--white-color);
   .title {
-    font-family: 'Mont-Bold';
+    font-family: "Mont-Bold";
     padding-bottom: 68px;
     font-size: 50px;
     font-weight: bold;
@@ -22,31 +22,42 @@
     transition: 600ms ease-in-out;
     left: 50%;
     transform: translate(-50%, 0);
+    .front-theme,
+    .back-theme {
+      padding: 25px;
+    }
+    .front-theme {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
   .card-theme:hover .face-theme.front-theme {
-    transform: perspective(500px) rotateY(180deg);
+    transform: perspective(1200px) rotateY(-180deg);
   }
   .card-theme:hover .face-theme.back-theme {
-    transform: perspective(500px) rotateY(360deg);
+    transform: perspective(1200px) rotateY(-360deg);
   }
   .card-theme .face-theme {
+    border-radius: 15px;
+    border: 2px solid gray;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    text-align: center;
+    text-align: left;
     backface-visibility: hidden;
     transform-style: preserve-3d;
     transition: 600ms ease-in-out;
     z-index: 1;
-    transform: perspective(500px) rotateY(0deg);
+    transform: perspective(1200px) rotateY(0deg);
   }
   .card-theme .face-theme.front-theme {
-    background: gray;
+    background: white;
   }
   .card-theme .face-theme.back-theme {
-    background: red;
-    transform: perspective(500px) rotateY(180deg);
+    background: white;
+    transform: perspective(1200px) rotateY(-180deg);
   }
 }
