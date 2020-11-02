@@ -15,6 +15,8 @@ export class ServicesCarouselComponent implements OnInit, AfterViewInit {
 
   serviceActive: any = servicesMock[0];
 
+  profilesColors: string[] = ['#a885d8', '#ff7900', '#ffb4e6'];
+
   ngOnInit(): void {
     const numDivisions = 10;
     this.services = new Array(Math.ceil(servicesMock.length / numDivisions))
