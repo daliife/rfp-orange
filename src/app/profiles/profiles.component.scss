@@ -68,32 +68,33 @@
   }
 }
 
-
-.cardHoverText{
-  .title{
-    font-size: 20px;
-    font-family: 'Mont-Bold';
+.cardHoverText {
+  .title {
+    font-family: "Mont-Bold";
     margin: 0;
+    font-size: 15.2px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: normal;
   }
-  .icon-values{
+  .icon-values {
     display: flex;
+    margin: 13px 0 21px 0;
     //justify-content: space-evenly;
-    .icon{
+    .icon {
       width: 20px;
       height: 20px;
-      margin: 10px;
+      margin: 0 10px;
     }
-    .icon-faded{
+    .icon-faded {
       opacity: 0.45;
     }
   }
 }
 
 // TEST CARDS HOVER
-
-body {
-  background-color: lightgrey;
-}
 
 /* Transistion both your normal and hovered elements to allow for smooth flow when unhovered */
 
@@ -102,10 +103,11 @@ body {
   background: white;
   margin-top: 40px;
   height: 400px;
-  width: 100%;
+  width: 280px;
   transition: 0.6s all ease;
   margin-left: auto;
   margin-right: auto;
+  border-color: #e3e4ea;
 }
 
 /* I used background url to allow me to change the height and width without needing extra css */
@@ -114,7 +116,27 @@ body {
   border-radius: 12px 12px 0px 0px;
   transition: 0.4s all ease;
   height: 65%;
-  background: url("https://i.ytimg.com/vi/lt0WQ8JzLz4/maxresdefault.jpg") no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 124px;
+    height: 124px;
+    object-fit: contain;
+    margin-bottom: 22px;
+    margin-top: 48px;
+  }
+  .title {
+    font-family: "Mont-Bold";
+    padding-bottom: 67px;
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: normal;
+    text-align: center;
+  }
 }
 
 .cardBottom {
@@ -123,10 +145,19 @@ body {
   transition: 0.4s all ease;
 }
 
+.hover-target {
+  border: solid 3px black;
+  img {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+  }
+}
+
 .cardText {
-  min-height: 100%;
-  padding: 20px;
   border-radius: 12px;
+  min-height: 100%;
+  padding: 25px;
 }
 
 .cardTitle {
@@ -145,30 +176,54 @@ body {
 
 .cardHoverText {
   visibility: hidden;
+  .download-button {
+    text-decoration: none;
+    margin-top: 15px;
+    float: left;
+    border: solid 2px black;
+    padding: 10px 20px;
+    font-family: "Helvetica-Neue";
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: -0.1px;
+    color: black;
+  }
 }
 
 /* Hover affects */
 
-.card:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-}
+// .card:hover {
+//   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+// }
 
 /* Using className + hover followed by child element allows you to change child elements when parent is hovered */
 
+.card .cardHoverText {
+  transition-delay: 0s;
+  opacity: 0;
+  transition: 0.4s all ease;
+}
 .card:hover .cardHoverText {
   visibility: visible;
   transition: 0.4s all ease;
   transition-delay: 0.1999s;
+  opacity: 1;
 }
 
 .card:hover .cardBottom {
   transition: 0.4s all ease;
-  height: 55%;
+  height: 100%;
   opacity: 1;
+  .cardText {
+    background-color: white;
+  }
 }
 
 .card:hover .cardTop {
   height: 0%;
-  opacity: 0.8;
+  opacity: 0;
   transition: 0.4s all ease;
 }
