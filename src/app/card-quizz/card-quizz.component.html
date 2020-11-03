@@ -14,7 +14,14 @@
         <div class="background-cards">
           <img src="assets/img/cards/bg-cards.svg" />
         </div>
-        <div class="card-theme center-align" (click)="toggleCard()">
+        <div
+          class="card-theme center-align animate__animated"
+          [ngClass]="{
+            animate__fadeOutLeft: false,
+            animate__fadeInRight: false
+          }"
+          (click)="toggleCard()"
+        >
           <div
             class="front-theme face-theme"
             [ngStyle]="{ 'background-image': getFrontUrl() }"
