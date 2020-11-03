@@ -16,22 +16,22 @@ export class ProfilesComponent implements OnInit {
       stats: [
         {
           name: 'Experiencia',
-          imgPath: 'assets/img/profiles/img-user-research@2x.png',
+          imgPath: 'assets/img/profiles/first/diamond.svg',
           value: 1,
         },
         {
           name: 'Empatía',
-          imgPath: 'assets/img/profiles/img-user-research@2x.png',
+          imgPath: 'assets/img/profiles/first/star.svg',
           value: 2,
         },
         {
           name: 'Analítico',
-          imgPath: 'assets/img/profiles/img-user-research@2x.png',
+          imgPath: 'assets/img/profiles/first/oval.svg',
           value: 3,
         },
         {
           name: 'Objetividad',
-          imgPath: 'assets/img/profiles/img-user-research@2x.png',
+          imgPath: 'assets/img/profiles/first/disc.svg',
           value: 4,
         },
       ],
@@ -45,22 +45,22 @@ export class ProfilesComponent implements OnInit {
       stats: [
         {
           name: 'Experiencia',
-          imgPath: 'assets/img/profiles/img-ux-interaction@2x.png',
+          imgPath: 'assets/img/profiles/third/diamond.svg',
           value: 4,
         },
         {
           name: 'Empatía',
-          imgPath: 'assets/img/profiles/img-ux-interaction@2x.png',
+          imgPath: 'assets/img/profiles/third/circle.svg',
           value: 3,
         },
         {
           name: 'Creatividad',
-          imgPath: 'assets/img/profiles/img-ux-interaction@2x.png',
+          imgPath: 'assets/img/profiles/third/bulb.svg',
           value: 2,
         },
         {
           name: 'Comunicación',
-          imgPath: 'assets/img/profiles/img-ux-interaction@2x.png',
+          imgPath: 'assets/img/profiles/third/flag.svg',
           value: 2,
         },
       ],
@@ -74,22 +74,22 @@ export class ProfilesComponent implements OnInit {
       stats: [
         {
           name: 'Experiencia',
-          imgPath: 'assets/img/profiles/img-experience-design@2x.png',
+          imgPath: 'assets/img/profiles/second/diamond.svg',
           value: 4,
         },
         {
-          name: 'Analítico',
-          imgPath: 'assets/img/profiles/img-experience-design@2x.png',
+          name: 'Empatía',
+          imgPath: 'assets/img/profiles/second/star.svg',
           value: 3,
         },
         {
           name: 'Creatividad',
-          imgPath: 'assets/img/profiles/img-experience-design@2x.png',
+          imgPath: 'assets/img/profiles/second/bulb.svg',
           value: 2,
         },
         {
-          name: 'Innovación',
-          imgPath: 'assets/img/profiles/img-experience-design@2x.png',
+          name: 'Comunicación',
+          imgPath: 'assets/img/profiles/second/message-circle.svg',
           value: 2,
         },
       ],

@@ -19,7 +19,7 @@ export const questions = [
     backImagePath: 'test.png',
   },
   {
-    type: 0,
+    type: 1,
     question:
       '22222¿Qué técnica utilizamos para conceptualizar la experiencia del cliente en las fases más tempranas?',
     answers: [
@@ -38,7 +38,7 @@ export const questions = [
     backImagePath: 'test.png',
   },
   {
-    type: 0,
+    type: 2,
     question:
       '33333¿Qué técnica utilizamos para conceptualizar la experiencia del cliente en las fases más tempranas?',
     answers: [
@@ -56,4 +56,16 @@ export const questions = [
     frontImagePath: 'test.png',
     backImagePath: 'test.png',
   },
+];
+
+export const frontCardUrls = [
+  'assets/img/cards/card-azul-pregunta.svg',
+  'assets/img/cards/card-verde-pregunta.svg',
+  'assets/img/cards/card-morada-pregunta.svg',
+];
+
+export const backCardUrls = [
+  'assets/img/cards/card-azul-respuesta.svg',
+  'assets/img/cards/card-verde-respuesta.svg',
+  'assets/img/cards/card-morada-respuesta.svg',
 ];

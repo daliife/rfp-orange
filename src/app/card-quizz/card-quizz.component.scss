@@ -1,5 +1,19 @@
 .card-quizz-container {
   background-color: var(--white-color);
+  .background-cards {
+    position: absolute;
+    transform: translate(-50%, 0%);
+    left: 50%;
+  }
+  .action-button {
+    font-family: "Helvetica-Neue";
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: -0.1px;
+  }
   .title {
     font-family: "Mont-Bold";
     padding-bottom: 68px;
@@ -12,35 +26,88 @@
     text-align: center;
   }
   .card-theme {
+    cursor: pointer;
     padding: 0;
     margin: 10px;
     margin-bottom: 105px;
-    width: 458px;
-    height: 675px;
+    width: 406px;
+    height: 626px;
     position: relative;
     transform-style: preserve-3d;
     transition: 600ms ease-in-out;
     left: 50%;
     transform: translate(-50%, 0);
-    .front-theme,
-    .back-theme {
-      padding: 25px;
-    }
     .front-theme {
+      padding: 104px 24px 32px 24px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      .question {
+        font-family: "Mont-Bold";
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.21;
+        letter-spacing: normal;
+      }
+      .answer {
+        font-size: 20px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        margin-bottom: 20px;
+      }
+    }
+    .back-theme {
+      padding: 48px 24px 32px 24px;
+      .header {
+        font-family: "Mont-Bold";
+        font-size: 22px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.1;
+        letter-spacing: normal;
+      }
+      .description {
+        font-size: 20px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        margin-top: 12px;
+      }
+      .advice-label {
+        width: 99px;
+        height: 25px;
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.73;
+        letter-spacing: normal;
+        color: white;
+        border-radius: 4px;
+        text-align: center;
+      }
     }
   }
-  .card-theme:hover .face-theme.front-theme {
-    transform: perspective(1200px) rotateY(-180deg);
+  .card-theme .front-theme.flipped {
+    transform: perspective(1200px) rotateY(-180deg) !important;
   }
-  .card-theme:hover .face-theme.back-theme {
-    transform: perspective(1200px) rotateY(-360deg);
+  .card-theme .back-theme.flipped {
+    transform: perspective(1200px) rotateY(-360deg) !important;
   }
   .card-theme .face-theme {
-    border-radius: 15px;
-    border: 2px solid gray;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 0;
     left: 0;
@@ -53,11 +120,7 @@
     z-index: 1;
     transform: perspective(1200px) rotateY(0deg);
   }
-  .card-theme .face-theme.front-theme {
-    background: white;
-  }
   .card-theme .face-theme.back-theme {
-    background: white;
     transform: perspective(1200px) rotateY(-180deg);
   }
 }
