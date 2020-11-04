@@ -1,7 +1,7 @@
 .introduction-container {
   position: relative;
   .scroll-container {
-    animation: float 2s ease-in-out infinite;
+    // animation: float 2s ease-in-out infinite;
     .scroll-logo {
       margin-top: 2.5%;
     }
@@ -49,9 +49,10 @@
   }
   .option-card {
     border: solid 3px #000000;
-    padding: 2.5% 2%;
+    padding: 2%;
     margin: 0.5%;
     width: 24.3125%;
+    height: 20.625%;
     .title {
       font-family: "Mont-Bold";
       font-size: 1.875rem;

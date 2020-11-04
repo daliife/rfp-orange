@@ -12,6 +12,55 @@
     />
   </head>
   <body>
+    <div
+      id="ie-wrapper"
+      style="
+        z-index: 15;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ff7900;
+        font-family: Helvetica, Arial, sans-serif;
+      "
+    >
+      <div
+        class="warning animate__animated animate__backInDown"
+        style="background-color: white; padding: 48px; width: 100%"
+      >
+        <h1
+          style="
+            font-weight: bold;
+            padding-bottom: 1rem;
+            font-size: 1.5rem;
+            color: #ff7900;
+          "
+        >
+          RFP Orange
+        </h1>
+        <h3 style="font-size: 1.15rem">
+          For the best experience please open using Chrome or Firefox in your
+          PC.
+        </h3>
+      </div>
+    </div>
+
+    <script>
+      const isMobileDevice = /Mobi/i.test(window.navigator.userAgent);
+      function isIE() {
+        ua = navigator.userAgent;
+        var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+        return is_ie;
+      }
+      if (isIE() || isMobileDevice) {
+        document.getElementById("ie-wrapper").style.display = "flex";
+      } else {
+        document.getElementById("ie-wrapper").style.display = "none";
+      }
+    </script>
+
     <app-root></app-root>
   </body>
 </html>

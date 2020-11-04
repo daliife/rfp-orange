@@ -24,7 +24,7 @@ export class CardQuizzComponent implements OnInit {
 
     const queryElement = document.querySelector('.card-theme');
     queryElement.addEventListener('animationend', (data: AnimationEvent) => {
-      if (data.animationName === 'fadeOutLeft') {
+      if (data.animationName === 'fadeOutDown') {
         this.isFront = true;
         if (this.cardId < this.questionsList.length - 1) {
           this.cardId++;
@@ -32,10 +32,10 @@ export class CardQuizzComponent implements OnInit {
           this.cardId = 0;
         }
         this.updateBackgroundUrls(this.cardId);
-        queryElement.classList?.remove('animate__fadeOutLeft');
+        queryElement.classList?.remove('animate__fadeOutDown');
         queryElement.classList?.add('animate__fadeIn');
       }
-      if (data.animationName === 'fadeOutRight') {
+      if (data.animationName === 'fadeOutUp') {
         this.isFront = true;
         if (this.cardId >= 1) {
           this.cardId--;
@@ -43,7 +43,7 @@ export class CardQuizzComponent implements OnInit {
           this.cardId = this.questionsList.length - 1;
         }
         this.updateBackgroundUrls(this.cardId);
-        queryElement.classList?.remove('animate__fadeOutRight');
+        queryElement.classList?.remove('animate__fadeOutUp');
         queryElement.classList?.add('animate__fadeIn');
       }
     });
@@ -68,13 +68,13 @@ export class CardQuizzComponent implements OnInit {
   nextCard(): void {
     const queryElement = document.querySelector('.card-theme');
     queryElement.classList?.remove('animate__fadeIn');
-    queryElement.classList.add('animate__fadeOutLeft');
+    queryElement.classList.add('animate__fadeOutDown');
   }
 
   previousCard(): void {
     const queryElement = document.querySelector('.card-theme');
     queryElement.classList?.remove('animate__fadeIn');
-    queryElement.classList.add('animate__fadeOutRight');
+    queryElement.classList.add('animate__fadeOutUp');
   }
 
   updateBackgroundUrls(newId: number): void {
