@@ -1,42 +1,55 @@
 .home-container {
-  height: 643px;
+  height: 40.1875rem;
   background-color: var(--black-color);
   position: relative;
   .cards-logo {
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     object-fit: contain;
-    margin: 94px 0 29px 0;
+    margin: 5.875% 0 1.875rem 0;
   }
   .main-title {
-    width: 605px;
-    height: 98px;
+    // width: 37.8125%;
+    margin-left: 26.125%;
+    margin-right: 26.125%;
+    height: auto;
     object-fit: contain;
   }
   .description {
-    margin-top: 125px;
+    margin: 0;
+    margin-top: 7.8125%;
+    // width: 37.0625%;
+    margin-left: 26.4375%;
+    margin-right: 26.4375%;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: center;
   }
-  .content-elements{
+  .content-elements {
     z-index: 2;
   }
   .floating-elements {
     z-index: -1;
     height: 100%;
     .floating-left {
-      width: 594px;
-      height: 688px;
+      width: 18.5625%;
+      height: 100%;
       object-fit: contain;
       position: absolute;
-      left: -4.5%;
+      left: 0%;
       top: 0;
     }
     .floating-right {
-      width: 987px;
-      height: 957px;
+      width: 30.84375%;
+      height: 100%;
       object-fit: contain;
       position: absolute;
-      right: -4.5%;
-      top: 35%;
+      right: 0%;
+      top: 48%;
     }
   }
 }

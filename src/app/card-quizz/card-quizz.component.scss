@@ -5,6 +5,21 @@
     transform: translate(-50%, 0%);
     left: 50%;
   }
+  .background-cards {
+    position: absolute;
+    transform: translate(-50%, 0%);
+    left: 50%;
+  }
+  .top-card {
+    img{
+      width: auto;
+      height: 700px;
+    }
+    position: absolute;
+    transform: translate(-50%, -5%);
+    left: 50%;
+    z-index: 5;
+  }
   .action-button {
     font-family: "Helvetica-Neue";
     font-size: 16px;

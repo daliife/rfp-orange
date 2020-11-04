@@ -81,6 +81,8 @@ html {
   text-align: center;
 }
 .orange-btn {
+  display: flex;
+  align-items: center;
   font-family: "Helvetica-Neue";
   background-color: var(--orange-color);
   padding: 1rem 1.5rem;
@@ -99,6 +101,8 @@ html {
   }
 }
 .white-btn {
+  display: flex;
+  align-items: center;
   font-family: "Helvetica-Neue";
   border: solid 3px #000000;
   background-color: var(--white-color);

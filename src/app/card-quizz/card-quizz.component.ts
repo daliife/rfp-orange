@@ -14,6 +14,8 @@ export class CardQuizzComponent implements OnInit {
   backImgUrl: string;
   cardColor = ['#4bb4e6', '#50be87', '#a885d8'];
 
+  gameStarted = false;
+
   constructor() {}
 
   ngOnInit(): void {
@@ -29,7 +31,6 @@ export class CardQuizzComponent implements OnInit {
         } else {
           this.cardId = 0;
         }
-        console.log('cardId', this.cardId);
         this.updateBackgroundUrls(this.cardId);
         queryElement.classList?.remove('animate__fadeOutLeft');
         queryElement.classList?.add('animate__fadeIn');
@@ -46,6 +47,10 @@ export class CardQuizzComponent implements OnInit {
         queryElement.classList?.add('animate__fadeIn');
       }
     });
+  }
+
+  startGame(): void{
+    this.gameStarted = true;
   }
 
   toggleCard(): void {

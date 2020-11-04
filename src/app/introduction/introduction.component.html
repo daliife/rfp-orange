@@ -1,43 +1,47 @@
 <div class="introduction-container">
   <div class="container-fluid">
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="scroll-container col-12 center-align">
-        <img class="scroll-logo" src="assets\img\scroll-icon.svg">
+        <img class="scroll-logo" src="assets\img\scroll-icon.svg" />
         <p class="scroll-text">Haz scroll</p>
       </div>
       <div class="col-12">
-        <h1 class="description center-align" style="margin-top: 220px">
+        <h1 class="description" style="margin-top: 13.75% !important">
           No hay mejor forma de entender al cliente que diseñar siempre pensando
           en él. Diseñando poniendo en el centro al usuario.
         </h1>
       </div>
       <div class="col-12">
-        <h1 class="description center-align" style="margin-top: 36px">
+        <h1 class="description">
           Pero, ¿tienes claro qué técnica aplicar en cada momento?, ¿qué perfil
           es el idóneo en cada servicio? o ¿cuánto tiempo es el adecuado para
           dinámica?
         </h1>
       </div>
       <div class="col-12">
-        <h1 class="description center-align" style="margin-top: 36px">
-          ¡Te retamos con un juego!
-        </h1>
+        <h1 class="description">¡Te retamos con un juego!</h1>
       </div>
-      <div class="col-12">
-        <h1 class="introduction-title center-align">Cómo funciona</h1>
+      <div class="col-12 center-align">
+        <h1 class="introduction-title">Cómo funciona</h1>
       </div>
     </div>
     <div class="row row-cols-3 justify-content-center">
-      <div *ngFor="let option of options" class="option-card col-3">
-        <div class="">
-          <h1 class="title">
-            {{ option.title }}
-          </h1>
-          <h3 class="description">
-            {{ option.description }}
-          </h3>
-          <a class="white-btn" href="{{ option.anchor }}">Descubre más</a>
-        </div>
+      <div
+        *ngFor="let option of options"
+        class="option-card col-sm-12 col-md-3"
+      >
+        <h1 class="title">
+          {{ option.title }}
+        </h1>
+        <p class="work-description">
+          {{ option.description }}
+        </p>
+        <a
+          class="white-btn"
+          style="justify-content: center"
+          href="{{ option.anchor }}"
+          >Descubre más</a
+        >
       </div>
     </div>
     <div class="row">

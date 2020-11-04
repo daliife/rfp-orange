@@ -1,9 +1,9 @@
 .services-container {
-  height: 1058px;
+  height: 66.25rem;
   background-color: #000000;
   .title {
-    padding-top: 70px;
-    margin-bottom: 32px;
+    padding-top: 4.375%;
+    margin-bottom: 2%;
     font-family: "Mont-Bold";
     font-size: 70px;
     font-weight: bold;
@@ -17,8 +17,9 @@
   .description {
     margin-right: auto;
     margin-left: auto;
-    width: 997px;
-    height: 102px;
+    width: 62.3125%;
+    // margin-right: 13.8125%;
+    // margin-left: 13.8125%;
     font-size: 26px;
     font-weight: 600;
     font-stretch: normal;
@@ -27,6 +28,6 @@
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
-    margin-bottom: 80px;
+    margin-bottom: 5%;
   }
 }
