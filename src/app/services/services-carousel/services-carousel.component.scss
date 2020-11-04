@@ -18,19 +18,23 @@
   }
   .carousel-title {
     font-family: "Mont-Bold";
-    width: 13rem;
+    // width: 13rem;
     font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.13;
     letter-spacing: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 }
 .slider-button {
   background-color: var(--orange-color);
-  margin: 1rem 0rem;
-  padding: 1rem 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
   span {
     display: flex;
   }

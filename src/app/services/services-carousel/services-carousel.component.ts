@@ -8,7 +8,7 @@ declare var $: any;
   styleUrls: ['./services-carousel.component.scss'],
 })
 export class ServicesCarouselComponent implements OnInit, AfterViewInit {
-  
+
   constructor() {}
 
   services: any;
@@ -16,7 +16,7 @@ export class ServicesCarouselComponent implements OnInit, AfterViewInit {
   serviceActive: any = servicesMock[0];
 
   participantsColors: string[] = ['#a885d8', '#ff7900', '#ffb4e6'];
-  
+
   profilesColors: string[] = ['#ff8ad4', '#50be87', '#4bb4e6'];
 
   profilesPaths = [
