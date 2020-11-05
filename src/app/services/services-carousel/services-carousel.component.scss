@@ -19,7 +19,7 @@
   .carousel-title {
     font-family: "Mont-Bold";
     // width: 13rem;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -91,10 +91,11 @@
   }
 }
 .modal-body {
+  background-color: white;
   text-align: left;
   .title {
-    padding: 1.25% 0px;
-    font-size: 20px;
+    padding: 1% 0 1% 0;
+    font-size: 18px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -104,23 +105,25 @@
   }
   .uniform-distribution {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     .profile-wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
       img {
         width: 70px;
         height: 70px;
         object-fit: contain;
       }
-      p{
+      p {
         margin-top: 1rem;
       }
     }
     p {
       font-family: "Helvetica-Neue";
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
       font-stretch: normal;
       font-style: normal;
@@ -131,7 +134,7 @@
   }
   .activities-text {
     margin: 0px 0px 0.625% 0;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -166,3 +169,8 @@
     }
   }
 }
+
+// .modal{
+//   background-color: white;
+//   opacity: 0.9;
+// }

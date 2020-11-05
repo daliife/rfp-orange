@@ -19,7 +19,7 @@
     // margin-left: 13.875%;
     margin-right: auto;
     margin-left: auto;
-    width: 62.3125%;
+    width: 85.3125%;
     font-size: 26px;
     font-weight: 600;
     font-stretch: normal;
@@ -64,14 +64,13 @@
     object-fit: contain;
     position: absolute;
     left: 0%;
-    top: -130%;
+    top: -100%;
     z-index: 1;
   }
 }
 
 .cardHoverText {
   .title {
-    font-family: "Mont-Bold";
     margin: 0;
     font-size: 15.2px;
     font-weight: 600;
@@ -87,7 +86,7 @@
     .icon {
       width: 1.25rem;
       height: 1.25rem;
-      margin: 0 0.625rem;
+      margin: 0 0.25rem;
     }
     .icon-faded {
       opacity: 0.45;
@@ -116,7 +115,7 @@
 .cardTop {
   border-radius: 12px 12px 0px 0px;
   transition: 0.4s all ease;
-  height: 65%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,13 +140,15 @@
 }
 
 .cardBottom {
-  height: 35%;
+  opacity: 0;
+  height: 100%;
+  position: absolute;
   text-wrap: normal;
   transition: 0.4s all ease;
 }
 
 .hover-target {
-  border: solid 3px black;
+  border: solid 2px black;
   img {
     width: 1.25rem;
     height: 1.25rem;
@@ -180,7 +181,7 @@
   .download-button {
     text-decoration: none;
     margin-top: 0.9375rem;
-    float: left;
+    display: inline-block;
     border: solid 2px black;
     padding: 0.625rem 1.25rem;
     font-family: "Helvetica-Neue";
@@ -191,31 +192,32 @@
     line-height: 1.13;
     letter-spacing: -0.1px;
     color: black;
+    &:hover {
+      color: white;
+      background-color: black;
+      text-decoration: none;
+    }
   }
 }
 
 /* Hover affects */
-
-// .card:hover {
-//   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-// }
 
 /* Using className + hover followed by child element allows you to change child elements when parent is hovered */
 
 .card .cardHoverText {
   transition-delay: 0s;
   opacity: 0;
-  transition: 0.4s all ease;
+  transition: 0.6s all ease;
 }
 .card:hover .cardHoverText {
   visibility: visible;
-  transition: 0.4s all ease;
-  transition-delay: 0.1999s;
+  transition: 0.6s all ease;
   opacity: 1;
+  transition-delay: 100ms;
 }
 
 .card:hover .cardBottom {
-  transition: 0.4s all ease;
+  transition: 0.6s all ease;
   height: 100%;
   opacity: 1;
   .cardText {
@@ -226,5 +228,5 @@
 .card:hover .cardTop {
   height: 0%;
   opacity: 0;
-  transition: 0.4s all ease;
+  transition: 0.6s all ease;
 }

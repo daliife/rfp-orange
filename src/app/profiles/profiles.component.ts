@@ -12,7 +12,7 @@ export class ProfilesComponent implements OnInit {
       description: 'blablabla',
       imgPath: 'assets/img/profiles/img-user-research@2x.png',
       color: '#ff8ad4',
-      downloadLink: 'https://google.com',
+      downloadLink: 'assets/img/CVs/User Reserach Expert.pdf',
       stats: [
         {
           name: 'Experiencia',
@@ -41,7 +41,7 @@ export class ProfilesComponent implements OnInit {
       description: 'blablabla',
       imgPath: 'assets/img/profiles/img-ux-interaction@2x.png',
       color: '#50be87',
-      downloadLink: 'https://google.com',
+      downloadLink: 'assets/img/CVs/UX Interaction Expert.pdf',
       stats: [
         {
           name: 'Experiencia',
@@ -70,7 +70,7 @@ export class ProfilesComponent implements OnInit {
       description: 'blablabla',
       imgPath: 'assets/img/profiles/img-experience-design@2x.png',
       color: '#4bb4e6',
-      downloadLink: 'https://google.com',
+      downloadLink: 'assets/img/CVs/User Experience Expert.pdf',
       stats: [
         {
           name: 'Experiencia',

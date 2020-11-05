@@ -31,7 +31,7 @@
   }
   .description {
     margin-top: 2.25%;
-    width: 49.6875%;
+    width: 55.6875%;
     // margin-left: 20.1875%;
     // margin-right: 20.1875%;
     margin-left: auto;
@@ -50,7 +50,10 @@
     padding: 2%;
     margin: 0.5%;
     width: 24.3125%;
-    height: 20.625%;
+    height: 20.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .title {
       font-family: "Mont-Bold";
       font-size: 1.875rem;
@@ -77,7 +80,7 @@
   }
   .render-box {
     margin-top: 5.875%;
-    max-width: 65%;
+    max-width: 70%;
     object-fit: contain;
   }
   .floating-elements {
@@ -95,7 +98,7 @@
       z-index: -1;
       position: absolute;
       right: 0%;
-      bottom: 0%;
+      bottom: -4%;
       width: 14.25%;
       height: 100%;
       object-fit: contain;
