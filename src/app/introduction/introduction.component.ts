@@ -10,19 +10,19 @@ export class IntroductionComponent implements OnInit {
     {
       title: '1. Servicios',
       description:
-        'In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam.',
+        'Para saber qué necesitan nuestros clientes, primero tenemos que entenderlos. ¿Conoces todos los servicios?',
       anchor: '#services',
     },
     {
       title: '2. Perfiles',
       description:
-        'In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam.',
+        'El equipo de diseño está formado por distintos perfiles. Conoce cuál es el más adecuado en cada momento.',
       anchor: '#profiles',
     },
     {
       title: '3. Preguntas',
       description:
-        'In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam.',
+        'No hay mejor forma de asentar conocimientos que a través de una dinámica. ¡Desafíate con nuestro juego de preguntas!',
       anchor: '#questions',
     },
   ];
@@ -31,12 +31,4 @@ export class IntroductionComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  scrollToElement($element): void {
-    console.log($element);
-    $element.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-      inline: 'nearest',
-    });
-  }
 }
