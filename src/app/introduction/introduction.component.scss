@@ -1,12 +1,10 @@
 .introduction-container {
   position: relative;
   .scroll-container {
-    // animation: float 2s ease-in-out infinite;
     .scroll-logo {
       margin-top: 2.5%;
     }
     .scroll-text {
-      margin-top: 0.625%;
       font-size: 1.125rem;
       font-family: "Mont-Bold";
       font-weight: bold;
@@ -102,17 +100,5 @@
       height: 100%;
       object-fit: contain;
     }
-  }
-}
-
-@keyframes float {
-  0% {
-    transform: translatey(0rem);
-  }
-  50% {
-    transform: translatey(-0.7rem);
-  }
-  100% {
-    transform: translatey(0rem);
   }
 }

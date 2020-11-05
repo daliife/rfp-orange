@@ -14,6 +14,12 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { HomeComponent } from './home/home.component';
 import { ServicesCarouselComponent } from './services/services-carousel/services-carousel.component';
 
+import { LottieModule } from 'ngx-lottie';
+import player, { LottiePlayer } from 'lottie-web';
+
+export function playerFactory(): LottiePlayer {
+  return player;
+}
 
 @NgModule({
   declarations: [
@@ -30,7 +36,7 @@ import { ServicesCarouselComponent } from './services/services-carousel/services
     HomeComponent,
     ServicesCarouselComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, LottieModule.forRoot({ player: playerFactory })],
   providers: [],
   bootstrap: [AppComponent],
 })

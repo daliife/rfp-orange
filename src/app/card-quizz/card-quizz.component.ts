@@ -21,35 +21,9 @@ export class CardQuizzComponent implements OnInit {
   ngOnInit(): void {
     this.questionsList = this.shuffleCards(questions);
     this.updateBackgroundUrls(this.cardId);
-
-    const queryElement = document.querySelector('.card-theme');
-    queryElement.addEventListener('animationend', (data: AnimationEvent) => {
-      if (data.animationName === 'fadeOutDown') {
-        this.isFront = true;
-        if (this.cardId < this.questionsList.length - 1) {
-          this.cardId++;
-        } else {
-          this.cardId = 0;
-        }
-        this.updateBackgroundUrls(this.cardId);
-        queryElement.classList?.remove('animate__fadeOutDown');
-        queryElement.classList?.add('animate__fadeIn');
-      }
-      if (data.animationName === 'fadeOutUp') {
-        this.isFront = true;
-        if (this.cardId >= 1) {
-          this.cardId--;
-        } else {
-          this.cardId = this.questionsList.length - 1;
-        }
-        this.updateBackgroundUrls(this.cardId);
-        queryElement.classList?.remove('animate__fadeOutUp');
-        queryElement.classList?.add('animate__fadeIn');
-      }
-    });
   }
 
-  startGame(): void{
+  startGame(): void {
     this.gameStarted = true;
   }
 
@@ -65,16 +39,44 @@ export class CardQuizzComponent implements OnInit {
     return 'url(' + this.backImgUrl + ')';
   }
 
+  onClickNext(): void {
+    if (this.isFront) {
+      this.nextCard();
+    } else {
+      this.isFront = true;
+      setTimeout(() => {
+        this.nextCard();
+      }, 500);
+    }
+  }
+
   nextCard(): void {
-    const queryElement = document.querySelector('.card-theme');
-    queryElement.classList?.remove('animate__fadeIn');
-    queryElement.classList.add('animate__fadeOutDown');
+    if (this.cardId < this.questionsList.length - 1) {
+      this.cardId++;
+    } else {
+      this.cardId = 0;
+    }
+    this.updateBackgroundUrls(this.cardId);
+  }
+
+  onClickPrevious(): void {
+    if (this.isFront) {
+      this.previousCard();
+    } else {
+      this.isFront = true;
+      setTimeout(() => {
+        this.previousCard();
+      }, 500);
+    }
   }
 
   previousCard(): void {
-    const queryElement = document.querySelector('.card-theme');
-    queryElement.classList?.remove('animate__fadeIn');
-    queryElement.classList.add('animate__fadeOutUp');
+    if (this.cardId >= 1) {
+      this.cardId--;
+    } else {
+      this.cardId = this.questionsList.length - 1;
+    }
+    this.updateBackgroundUrls(this.cardId);
   }
 
   updateBackgroundUrls(newId: number): void {
@@ -94,15 +96,15 @@ export class CardQuizzComponent implements OnInit {
     }
   }
 
-  shuffleCards(arr: Array<any>): Array<any>{
+  shuffleCards(arr: Array<any>): Array<any> {
     let i: number;
     let j: number;
     let temp: any;
     for (i = arr.length - 1; i > 0; i--) {
-        j = Math.floor(Math.random() * (i + 1));
-        temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
+      j = Math.floor(Math.random() * (i + 1));
+      temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
     }
     return arr;
   }

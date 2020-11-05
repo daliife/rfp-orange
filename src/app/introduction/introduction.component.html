@@ -1,8 +1,16 @@
 <div class="introduction-container">
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="scroll-container col-12 center-align">
-        <img class="scroll-logo" src="assets\img\scroll-icon.svg" />
+      <div
+        class="scroll-container col-12 center-align"
+        style="display: grid; place-items: center"
+      >
+        <ng-lottie
+          class="scroll-logo"
+          width="2.5rem"
+          height="4rem"
+          [options]="{ path: 'assets/animations/scroll.json' }"
+        ></ng-lottie>
         <p class="scroll-text">Haz scroll</p>
       </div>
       <div class="col-12">
