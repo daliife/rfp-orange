@@ -48,14 +48,18 @@
     a {
       margin: 0 1.5rem;
     }
+    .arrow-icon {
+      background-image: url("../../assets/logos/ico-download.svg");
+      display: block;
+      width: 0.875rem;
+      height: 0.9375rem;
+      object-fit: contain;
+      color: #000000;
+      margin-left: 0.8125rem;
+      transition: all 250ms;
+    }
+    .download-button:hover .arrow-icon {
+      background-image: url("../../assets/logos/ico-download-white.svg") !important;
+    }
   }
-}
-.arrow-icon {
-  background: url("../../assets/logos/ico-download.svg");
-  display: block;
-  width: 0.875rem;
-  height: 0.9375rem;
-  object-fit: contain;
-  color: #000000;
-  margin-left: 0.8125rem;
 }

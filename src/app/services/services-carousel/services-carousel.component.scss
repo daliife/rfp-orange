@@ -169,8 +169,21 @@
     }
   }
 }
+// Background modal color
+::ng-deep .modal-backdrop.show {
+  background: white;
+  background-color: white;
+  opacity: 0.9 !important;
+}
 
-// .modal{
-//   background-color: white;
-//   opacity: 0.9;
-// }
+.modal-content {
+  border-radius: 0 !important;
+  .modal-header {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+  .modal-body {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+}

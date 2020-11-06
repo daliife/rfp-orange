@@ -9,16 +9,18 @@
     margin: 5.875% 0 1.875rem 0;
   }
   .main-title {
+    display: grid;
+    place-items: center;
     // width: 37.8125%;
     // margin-left: 26.125%;
     // margin-right: 26.125%;
     // height: auto;
-    object-fit: contain;
+    // object-fit: contain;
   }
   .description {
     margin: 0;
-    margin-top: 7.8125%;
-    margin-bottom: 4.8125%;
+    margin-top: 8.8125%;
+    margin-bottom: 6.8125%;
     // width: 37.0625%;
     margin-left: 24.4375%;
     margin-right: 24.4375%;
@@ -37,7 +39,7 @@
     z-index: -1;
     height: 100%;
     .floating-left {
-      width: 18.5625%;
+      width: 18.5625vw;
       height: 100%;
       object-fit: contain;
       position: absolute;
@@ -45,7 +47,7 @@
       top: 0;
     }
     .floating-right {
-      width: 30.84375%;
+      width: 30.84375vw;
       height: 100%;
       object-fit: contain;
       position: absolute;
