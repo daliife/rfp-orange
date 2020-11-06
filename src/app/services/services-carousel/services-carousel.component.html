@@ -109,14 +109,14 @@
                   {{ participant }}
                 </p>
               </div>
-              <h3 class="title orange-color">Profiles</h3>
+              <h3 class="title orange-color">Perfiles</h3>
               <div class="uniform-distribution">
                 <div
                   class="profile-wrapper"
                   *ngFor="let profile of serviceActive.profiles; let i = index"
                 >
                   <img *ngIf="profile" src="{{ profilesPaths[i] }}" />
-                  <p [ngStyle]="{ color: profilesColors[i] }">
+                  <p *ngIf="profile" [ngStyle]="{ color: profilesColors[i] }">
                     {{ profile }}
                   </p>
                 </div>

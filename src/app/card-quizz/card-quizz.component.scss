@@ -29,6 +29,7 @@
     }
   }
   .top-card {
+    cursor: pointer;
     img {
       width: auto;
       height: 43.16875rem;
@@ -160,7 +161,7 @@
     text-align: left;
     backface-visibility: hidden;
     transform-style: preserve-3d;
-    transition: 250ms ease-in-out;
+    transition: 500ms ease-in-out;
     z-index: 1;
     transform: perspective(1200px) rotateY(0deg);
   }
