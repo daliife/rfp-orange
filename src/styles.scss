@@ -37,13 +37,8 @@
 }
 
 @font-face {
-  font-family: Helvetica-Neue-option;
-  src: url("assets/fonts/HelveticaNeueDeskInterface.ttc");
-}
-
-@font-face {
   font-family: Helvetica-Neue-Bold;
-  src: url("assets/fonts/HelveticaNeueBold.ttf");
+  src: url("assets/fonts/FreeSansBold.otf");
 }
 
 // -------- RESETS ---------------
@@ -88,7 +83,7 @@ html {
 .orange-btn {
   display: flex;
   align-items: center;
-  font-family: "Helvetica-Neue";
+  font-family: "Helvetica-Neue-Bold";
   background-color: var(--orange-color);
   padding: 0.875rem 1.5rem;
   font-size: 16px;
@@ -108,7 +103,7 @@ html {
 .white-btn {
   display: flex;
   align-items: center;
-  font-family: "Helvetica-Neue";
+  font-family: "Helvetica-Neue-Bold";
   border: solid 3px #000000;
   background-color: var(--white-color);
   padding: 0.875rem 1.5rem;
