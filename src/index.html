@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>RFP - Orange</title>
+    <base href="." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div
+      id="ie-wrapper"
+      style="
+        z-index: 15;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ff7900;
+      "
+    >
+      <div
+        class="warning animate__animated animate__backInDown"
+        style="background-color: white; padding: 48px; width: 100%"
+      >
+        <h1
+          style="
+            font-weight: bold;
+            padding-bottom: 1rem;
+            font-size: 1.5rem;
+            color: #ff7900;
+            font-family: 'Mont-Bold';
+          "
+        >
+          everis services cards
+        </h1>
+        <h3 style="font-size: 1.15rem">
+          Para una mejor experiencia, por favor, utiliza un ordenador.
+          Próximamente, estará disponible en todos los dispositivos.
+        </h3>
+      </div>
+    </div>
+    <script>
+      const isMobileDevice = /Mobi/i.test(window.navigator.userAgent);
+      function isIE() {
+        ua = navigator.userAgent;
+        var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+        return is_ie;
+      }
+      if (isIE() || isMobileDevice) {
+        document.getElementById("ie-wrapper").style.display = "flex";
+      } else {
+        document.getElementById("ie-wrapper").style.display = "none";
+      }
+    </script>
+
+    <app-root></app-root>
+  </body>
+</html>

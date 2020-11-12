@@ -1,0 +1,171 @@
+.card-quizz-container {
+  position: relative;
+  background-color: var(--white-color);
+  .background-cards {
+    position: absolute;
+    transform: translate(-50%, 0%);
+    left: 50%;
+  }
+  .card-wrapper {
+    position: relative;
+  }
+  .instructions-container {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 20%;
+    left: -38%;
+    align-items: flex-end;
+    .text {
+      font-size: 16px;
+      width: 6.5625rem;
+      font-family: "Mont-Bold";
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #a885d8;
+    }
+  }
+  .top-card {
+    cursor: pointer;
+    img {
+      width: auto;
+      height: 43.16875rem;
+    }
+    position: absolute;
+    transform: translate(-50%, -5%);
+    left: 50%;
+    z-index: 5;
+  }
+  .action-button {
+    font-family: "Helvetica-Neue";
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: -0.1px;
+  }
+  .title {
+    font-family: "Mont-Bold";
+    padding-bottom: 68px;
+    font-size: 50px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  .card-theme {
+    cursor: pointer;
+    padding: 0;
+    margin: 10px;
+    margin-bottom: 6.5625rem;
+    width: 24.10625rem;
+    height: 37.16875rem;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 500ms ease-in-out;
+    left: 50%;
+    transform: translate(-50%, 0);
+    .front-theme {
+      padding: 104px 24px 32px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .question {
+        font-family: "Mont-Bold";
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.21;
+        letter-spacing: normal;
+      }
+      .answer {
+        font-size: 20px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        margin-bottom: 1rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .back-theme {
+      padding: 48px 24px 32px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .header {
+        font-family: "Mont-Bold";
+        font-size: 22px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.1;
+        letter-spacing: normal;
+      }
+      .description {
+        font-size: 20px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        margin-top: 12px;
+      }
+      .advice-wrapper {
+        display: flex;
+        place-items: flex-end;
+        justify-content: space-between;
+        .advice-label {
+          // width: 99px;
+          font-size: 14px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.73;
+          letter-spacing: normal;
+          color: white;
+          border-radius: 4px;
+          text-align: center;
+          padding: 0.1rem 0.75rem;
+        }
+      }
+    }
+  }
+  .card-theme .front-theme.flipped {
+    transform: perspective(1200px) rotateY(-180deg) !important;
+  }
+  .card-theme .back-theme.flipped {
+    transform: perspective(1200px) rotateY(-360deg) !important;
+  }
+  .card-theme .face-theme {
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: 500ms ease-in-out;
+    z-index: 1;
+    transform: perspective(1200px) rotateY(0deg);
+  }
+  .card-theme .face-theme.back-theme {
+    transform: perspective(1200px) rotateY(-180deg);
+  }
+}

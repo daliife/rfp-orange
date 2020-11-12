@@ -1,0 +1,35 @@
+<div id="collaborators" class="collaborators-container">
+  <div class="center-align">
+    <h1 class="collaborators-title">¿Hablamos?</h1>
+  </div>
+  <div id="collaborators" class="container-fluid">
+    <div class="row">
+      <div
+        *ngFor="let collaborator of collaborators"
+        class="col-xs-12 col-sm-12 col-md-6 col-lg-3 center-align"
+      >
+        <img class="collaborator-img" src="{{ collaborator.imgPath }}" />
+        <h1 class="title">{{ collaborator.title }}</h1>
+        <h2 class="subtitle">
+          {{ collaborator.subtitle }}
+        </h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div id="action-buttons">
+        <a
+          class="download-button white-btn"
+          href="assets/Propuesta everis - Conceptualización_producto+Experto_UX.pdf.zip"
+          download
+          >Descargar propuesta
+          <span class="arrow-icon"></span>
+        </a>
+        <a
+          href="mailto: Aurora.Sanz.Municio@everis.com; Fernando.Gil.Sole@everis.com; isabel.blas.moreno@everis.com; elena.martin.dorado.lozon@everis.com;"
+          class="orange-btn"
+          >Contacta con nosotros</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

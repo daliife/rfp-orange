@@ -1,0 +1,123 @@
+// -------- COLORS ---------------
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --base-color: #c6538c;
+  --primary-color: red;
+  --secondary-color: yellow;
+  --tertiary-color: blue;
+  --everis-color: #b9d305;
+  --orange-color: #ff7900;
+}
+.everis-color {
+  color: var(--everis-color);
+}
+.orange-color {
+  color: var(--orange-color);
+}
+.white-color {
+  color: var(--white-color);
+}
+
+// -------- FONTS IMPORTS ---------------
+
+@font-face {
+  font-family: Mont-Bold;
+  src: url("assets/fonts/Mont-Bold.ttf");
+}
+
+@font-face {
+  font-family: Mont-SemiBold;
+  src: url("assets/fonts/Mont-Semibold.ttf");
+}
+
+@font-face {
+  font-family: Helvetica-Neue;
+  src: url("assets/fonts/HelveticaNeue.ttc");
+}
+
+@font-face {
+  font-family: Helvetica-Neue-Bold;
+  src: url("assets/fonts/FreeSansBold.otf");
+}
+
+// -------- RESETS ---------------
+*,
+p,
+img {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Mont-Semibold", "Helvetica-Neue", Helvetica, sans-serif;
+  color: var(--black-color);
+}
+img {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+//NO SCROLLBAR
+html {
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+// GLOBAL CLASSES
+
+.center-align {
+  text-align: center;
+}
+.orange-btn {
+  display: flex;
+  align-items: center;
+  font-family: "Helvetica-Neue-Bold";
+  background-color: var(--orange-color);
+  padding: 0.875rem 1.5rem;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.1px;
+  text-align: center;
+  color: #ffffff;
+  transition: all 250ms;
+  &:hover {
+    color: #ffffff;
+    background-color: black;
+    text-decoration: none;
+  }
+}
+.white-btn {
+  display: flex;
+  align-items: center;
+  font-family: "Helvetica-Neue-Bold";
+  border: solid 3px #000000;
+  background-color: var(--white-color);
+  padding: 0.875rem 1.5rem;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.1px;
+  text-align: center;
+  color: #000000;
+  transition: all 250ms;
+  &:hover {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+  }
+}

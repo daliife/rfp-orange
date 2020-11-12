@@ -1,0 +1,65 @@
+.collaborators-container {
+  .collaborators-title {
+    font-size: 3rem;
+    font-family: "Mont-Bold";
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.08;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ff7900;
+    padding: 4.5rem 0rem;
+    margin: 0;
+  }
+  #collaborators {
+    .collaborator-img {
+      width: 10rem;
+      height: 10rem;
+      object-fit: contain;
+    }
+    .title {
+      padding-top: 2rem;
+      font-family: "Mont-Bold";
+      font-size: 1.375rem;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ff7900;
+    }
+    .subtitle {
+      font-size: 1rem;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.75;
+      letter-spacing: normal;
+      text-align: center;
+      color: #000000;
+    }
+  }
+  #action-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0rem;
+    a {
+      margin: 0 1.5rem;
+    }
+    .arrow-icon {
+      background-image: url("../../assets/logos/ico-download.svg");
+      display: block;
+      width: 0.875rem;
+      height: 0.9375rem;
+      object-fit: contain;
+      color: #000000;
+      margin-left: 0.8125rem;
+      transition: all 250ms;
+    }
+    .download-button:hover .arrow-icon {
+      background-image: url("../../assets/logos/ico-download-white.svg") !important;
+    }
+  }
+}

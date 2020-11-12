@@ -1,0 +1,120 @@
+<div class="card-quizz-container">
+  <h1 class="title center-align orange-color">¡Vamos a jugar!</h1>
+  <div class="card-container container-fluid">
+    <div
+      class="row"
+      style="display: flex; justify-content: space-evenly; align-items: center"
+    >
+      <div class="button-container">
+        <button
+          [ngStyle]="{
+            opacity: gameStarted ? '1' : '0',
+            'pointer-events': gameStarted ? 'all' : 'none'
+          }"
+          class="white-btn action-button"
+          (click)="onClickPrevious()"
+        >
+          Pregunta anterior
+        </button>
+      </div>
+      <div class="card-wrapper">
+        <div class="background-cards">
+          <img src="assets/img/cards/bg-cards.svg" />
+        </div>
+        <div class="instructions-container">
+          <p class="text">Selecciona la opción correcta</p>
+          <ng-lottie
+            width="1.8125rem"
+            height="1.625rem"
+            [options]="{ path: 'assets/animations/arrow.json' }"
+          ></ng-lottie>
+        </div>
+        <div *ngIf="!gameStarted" class="top-card" (click)="startGame()">
+          <img src="assets/img/cards/img-portada@2x.png" />
+        </div>
+        <div
+          class="card-theme center-align animate__animated"
+          (click)="toggleCard()"
+        >
+          <div
+            class="front-theme face-theme"
+            [ngStyle]="{ 'background-image': getFrontUrl() }"
+            [ngClass]="{ flipped: !isFront }"
+          >
+            <h2 class="question">{{ questionsList[cardId].question }}</h2>
+            <div class="answers-container">
+              <p
+                class="answer"
+                [ngStyle]="{ color: cardColor[questionsList[cardId].type] }"
+                *ngFor="let answer of questionsList[cardId].answers"
+              >
+                {{ answer }}
+              </p>
+            </div>
+          </div>
+          <div
+            class="back-theme face-theme"
+            [ngStyle]="{ 'background-image': getBackUrl() }"
+            [ngClass]="{ flipped: !isFront }"
+          >
+            <div class="top-part">
+              <h2 class="header">Solución</h2>
+              <p
+                class="description"
+                [ngStyle]="{ color: cardColor[questionsList[cardId].type] }"
+              >
+                {{ questionsList[cardId].solution }}
+              </p>
+            </div>
+            <div class="bottom-part">
+              <h2 class="header" style="margin-top: 2rem">¿Por qué?</h2>
+              <p
+                class="description"
+                [ngStyle]="{ color: cardColor[questionsList[cardId].type] }"
+              >
+                {{ questionsList[cardId].reason }}
+              </p>
+              <div class="advice-wrapper">
+                <h2
+                  *ngIf="questionsList[cardId].advice"
+                  class="header"
+                  style="margin-top: 2rem; margin-bottom: 0"
+                >
+                  Consejo
+                </h2>
+                <p
+                  *ngIf="questionsList[cardId].adviceLabel"
+                  class="advice-label"
+                  [ngStyle]="{
+                    'background-color': cardColor[questionsList[cardId].type]
+                  }"
+                >
+                  {{ questionsList[cardId].adviceLabel }}
+                </p>
+              </div>
+              <p
+                *ngIf="questionsList[cardId].advice"
+                class="description"
+                [ngStyle]="{ color: cardColor[questionsList[cardId].type] }"
+              >
+                {{ questionsList[cardId].advice }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="button-container">
+        <button
+          [ngStyle]="{
+            opacity: gameStarted ? '1' : '0',
+            'pointer-events': gameStarted ? 'all' : 'none'
+          }"
+          class="white-btn action-button"
+          (click)="onClickNext()"
+        >
+          Siguiente pregunta
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

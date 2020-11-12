@@ -1,0 +1,108 @@
+.introduction-container {
+  position: relative;
+  .scroll-container {
+    .scroll-logo {
+      margin-top: 2.5%;
+    }
+    .scroll-text {
+      font-size: 1.125rem;
+      font-family: "Mont-Bold";
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ff7900;
+    }
+  }
+  .introduction-title {
+    font-family: "Mont-Bold";
+    font-size: 4.375rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ff7900;
+    padding-top: 17.4375%;
+    padding-bottom: 3.75%;
+    margin: 0;
+  }
+  .description {
+    margin-top: 2.25%;
+    width: 55.6875%;
+    // margin-left: 20.1875%;
+    // margin-right: 20.1875%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.625rem;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+  }
+  .option-card {
+    border: solid 3px #000000;
+    padding: 2%;
+    margin: 0.5%;
+    width: 24.3125%;
+    // height: 20.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    .title {
+      font-family: "Mont-Bold";
+      font-size: 1.875rem;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ff7900;
+      margin-bottom: 1rem;
+    }
+    .work-description {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.4;
+      letter-spacing: normal;
+      color: #000000;
+      margin-bottom: 2.8125rem;
+      text-align: left;
+    }
+  }
+  .render-box {
+    margin-top: 5.875%;
+    max-width: 70%;
+    object-fit: contain;
+  }
+  .floating-elements {
+    height: 100%;
+    .floating-left {
+      z-index: -1;
+      position: absolute;
+      left: 0;
+      top: -10%;
+      width: 35.75vw;
+      height: 100%;
+      object-fit: contain;
+    }
+    .floating-right {
+      z-index: -1;
+      position: absolute;
+      right: 0%;
+      bottom: -4%;
+      width: 14.25vw;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

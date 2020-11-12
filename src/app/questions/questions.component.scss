@@ -1,0 +1,48 @@
+.questions-container {
+  //padding: 20px 222px;
+  //height: 600px;
+  position: relative;
+  .title {
+    font-family: "Mont-Bold";
+    font-size: 70px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ff7900;
+    padding-top: 15.625%;
+    margin-bottom: 0;
+  }
+  .description {
+    width: 60%;
+    font-size: 26px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.875%;
+    margin-bottom: 6.25%;
+  }
+  .floating-left {
+    width: 15vw;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -5;
+  }
+  .floating-right {
+    width: 20vw;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -5;
+  }
+}

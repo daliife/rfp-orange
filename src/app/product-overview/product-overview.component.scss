@@ -1,0 +1,27 @@
+.product-container {
+  background-color: var(--black-color);
+  .title {
+    // width: 49.25rem;
+    font-family: "Mont-Bold";
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.08;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ff7900;
+    margin-top: 5%;
+    margin-bottom: 3.75%;
+    margin-left: 20.375%;
+    margin-right: 20.375%;
+  }
+  .render {
+    width: 100%;
+    //height: 936px;
+    max-width: 75%;
+    object-fit: contain;
+    margin-top: 3.25%;
+    margin-bottom: 10%;
+  }
+}
