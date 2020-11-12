@@ -1,4 +1,30 @@
-# RfpOrange
+# RFP - Orange
+
+## Screenshots
+
+### Welcome section
+
+![Imgur](https://imgur.com/tu1Izil.png)
+
+### How it works section
+
+![Imgur](https://imgur.com/Z4kmC7S.png)
+
+### Services (carousel)
+
+![Imgur](https://imgur.com/eAh7nvU.png)
+
+### Services card (modal)
+
+![Imgur](https://imgur.com/jUXxn3m.png)
+
+### Profiles (hover cards)
+
+![Imgur](https://imgur.com/9hAugfh.png)
+
+### Card minigame (flip card)
+
+![Imgur](https://imgur.com/WC0fg83.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
